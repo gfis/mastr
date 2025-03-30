@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AnlagenGasSpeicher" type="AnlagenGasSpeicherType"/>
+  <xs:complexType name="AnlageGasSpeicherType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="MaStRNummer"/>
+      <xs:element type="xs:string" name="DatumLetzteAktualisierung"/>
+      <xs:element type="xs:string" name="Speichername"/>
+      <xs:element type="xs:string" name="Registrierungsdatum"/>
+      <xs:element type="xs:string" name="AnlageBetriebsstatus"/>
+      <xs:element type="xs:string" name="VerknuepfteEinheitenMaStRNummern"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AnlagenGasSpeicherType">
+    <xs:sequence>
+      <xs:element type="AnlageGasSpeicherType" name="AnlageGasSpeicher" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

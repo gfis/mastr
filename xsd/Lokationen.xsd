@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Lokationen" type="LokationenType"/>
+  <xs:complexType name="LokationType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="DatumLetzteAktualisierung"/>
+      <xs:element type="xs:string" name="MastrNummer"/>
+      <xs:element type="xs:string" name="NameDerTechnischenLokation" minOccurs="0"/>
+      <xs:element type="xs:string" name="Lokationtyp"/>
+      <xs:element type="xs:string" name="VerknuepfteEinheitenMaStRNummern"/>
+      <xs:element type="xs:string" name="NetzanschlusspunkteMaStRNummern" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LokationenType">
+    <xs:sequence>
+      <xs:element type="LokationType" name="Lokation" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

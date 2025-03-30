@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Marktakteure" type="MarktakteureType"/>
+  <xs:complexType name="MarktakteurType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="MastrNummer"/>
+      <xs:element type="xs:string" name="DatumLetzeAktualisierung"/>
+      <xs:element type="xs:string" name="Personenart"/>
+      <xs:element type="xs:string" name="Firmenname"/>
+      <xs:element type="xs:string" name="Marktfunktion"/>
+      <xs:element type="xs:string" name="Rechtsform"/>
+      <xs:element type="xs:string" name="Land"/>
+      <xs:element type="xs:string" name="Strasse"/>
+      <xs:element type="xs:string" name="Hausnummer"/>
+      <xs:element type="xs:string" name="Hausnummer_nv"/>
+      <xs:element type="xs:string" name="Postleitzahl"/>
+      <xs:element type="xs:string" name="Ort"/>
+      <xs:element type="xs:string" name="Bundesland"/>
+      <xs:element type="xs:string" name="Email"/>
+      <xs:element type="xs:string" name="Telefon"/>
+      <xs:element type="xs:string" name="Fax_nv"/>
+      <xs:element type="xs:string" name="Webseite_nv"/>
+      <xs:element type="xs:string" name="RegistergerichtAusland"/>
+      <xs:element type="xs:string" name="Taetigkeitsbeginn"/>
+      <xs:element type="xs:string" name="AcerCode_nv"/>
+      <xs:element type="xs:string" name="Umsatzsteueridentifikationsnummer_nv"/>
+      <xs:element type="xs:string" name="BundesnetzagenturBetriebsnummer"/>
+      <xs:element type="xs:string" name="BundesnetzagenturBetriebsnummer_nv"/>
+      <xs:element type="xs:string" name="LandAnZustelladresse"/>
+      <xs:element type="xs:string" name="PostleitzahlAnZustelladresse"/>
+      <xs:element type="xs:string" name="OrtAnZustelladresse"/>
+      <xs:element type="xs:string" name="StrasseAnZustelladresse"/>
+      <xs:element type="xs:string" name="HausnummerAnZustelladresse"/>
+      <xs:element type="xs:string" name="HausnummerAnZustelladresse_nv"/>
+      <xs:element type="xs:string" name="Registernummer"/>
+      <xs:element type="xs:string" name="RegistrierungsdatumMarktakteur"/>
+      <xs:element type="xs:string" name="Marktrollen"/>
+      <xs:element type="xs:string" name="Netz"/>
+      <xs:element type="xs:string" name="Webseite"/>
+      <xs:element type="xs:string" name="Registergericht"/>
+      <xs:element type="xs:string" name="RegisternummerPraefix"/>
+      <xs:element type="xs:string" name="AcerCode"/>
+      <xs:element type="xs:string" name="Umsatzsteueridentifikationsnummer"/>
+      <xs:element type="xs:string" name="Fax"/>
+      <xs:element type="xs:string" name="Adresszusatz"/>
+      <xs:element type="xs:string" name="WebportalDesNetzbetreibers"/>
+      <xs:element type="xs:string" name="Taetigkeitsende"/>
+      <xs:element type="xs:string" name="AdresszusatzAnZustelladresse"/>
+      <xs:element type="xs:string" name="Region"/>
+      <xs:element type="xs:string" name="Nuts2"/>
+      <xs:element type="xs:string" name="MarktakteurVorname"/>
+      <xs:element type="xs:string" name="MarktakteurNachname"/>
+      <xs:element type="xs:string" name="SonstigeRechtsform"/>
+      <xs:element type="xs:string" name="Kmu"/>
+      <xs:element type="xs:string" name="HauptwirtdschaftszweigAbteilung"/>
+      <xs:element type="xs:string" name="HauptwirtdschaftszweigGruppe"/>
+      <xs:element type="xs:string" name="HauptwirtdschaftszweigAbschnitt"/>
+      <xs:element type="xs:string" name="Direktvermarktungsunternehmen"/>
+      <xs:element type="xs:string" name="BelieferungVonLetztverbrauchernStrom"/>
+      <xs:element type="xs:string" name="BelieferungHaushaltskundenStrom"/>
+      <xs:element type="xs:string" name="Stromgrosshaendler"/>
+      <xs:element type="xs:string" name="Gasgrosshaendler"/>
+      <xs:element type="xs:string" name="BelieferungVonLetztverbrauchernGas"/>
+      <xs:element type="xs:string" name="BelieferungHaushaltskundenGas"/>
+      <xs:element type="xs:string" name="RegisternummerAusland"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="MarktakteureType">
+    <xs:sequence>
+      <xs:element type="MarktakteurType" name="Marktakteur" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

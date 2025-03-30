@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Netzanschlusspunkte" type="NetzanschlusspunkteType"/>
+  <xs:complexType name="NetzanschlusspunktType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="NetzanschlusspunktMastrNummer"/>
+      <xs:element type="xs:string" name="NetzanschlusspunktBezeichnung" minOccurs="0"/>
+      <xs:element type="xs:string" name="LetzteAenderung"/>
+      <xs:element type="xs:string" name="LokationMaStRNummer"/>
+      <xs:element type="xs:string" name="NameDerTechnischenLokation" minOccurs="0"/>
+      <xs:element type="xs:string" name="Lokationtyp"/>
+      <xs:element type="xs:string" name="Messlokation" minOccurs="0"/>
+      <xs:element type="xs:string" name="Spannungsebene" minOccurs="0"/>
+      <xs:element type="xs:string" name="Nettoengpassleistung" minOccurs="0"/>
+      <xs:element type="xs:string" name="BilanzierungsgebietNetzanschlusspunktId" minOccurs="0"/>
+      <xs:element type="xs:string" name="Netzanschlusskapazitaet" minOccurs="0"/>
+      <xs:element type="xs:string" name="RegelzoneNetzanschlusspunkt" minOccurs="0"/>
+      <xs:element type="xs:string" name="MaximaleAusspeiseleistung" minOccurs="0"/>
+      <xs:element type="xs:string" name="MaximaleEinspeiseleistung" minOccurs="0"/>
+      <xs:element type="xs:string" name="Gasqualitaet" minOccurs="0"/>
+      <xs:element type="xs:string" name="NetzMaStRNummer"/>
+      <xs:element type="xs:string" name="NochInPlanung"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NetzanschlusspunkteType">
+    <xs:sequence>
+      <xs:element type="NetzanschlusspunktType" name="Netzanschlusspunkt" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

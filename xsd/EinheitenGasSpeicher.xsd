@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EinheitenGasSpeicher" type="EinheitenGasSpeicherType"/>
+  <xs:complexType name="EinheitGasSpeicherType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="EinheitMastrNummer"/>
+      <xs:element type="xs:string" name="DatumLetzteAktualisierung"/>
+      <xs:element type="xs:string" name="LokationMaStRNummer" minOccurs="0"/>
+      <xs:element type="xs:string" name="NetzbetreiberpruefungStatus"/>
+      <xs:element type="xs:string" name="NetzbetreiberpruefungDatum" minOccurs="0"/>
+      <xs:element type="xs:string" name="AnlagenbetreiberMastrNummer" minOccurs="0"/>
+      <xs:element type="xs:string" name="Land"/>
+      <xs:element type="xs:string" name="Bundesland"/>
+      <xs:element type="xs:string" name="Landkreis"/>
+      <xs:element type="xs:string" name="Gemeinde"/>
+      <xs:element type="xs:string" name="Gemeindeschluessel"/>
+      <xs:element type="xs:string" name="Postleitzahl"/>
+      <xs:element type="xs:string" name="Strasse" minOccurs="0"/>
+      <xs:element type="xs:string" name="Gemarkung" minOccurs="0"/>
+      <xs:element type="xs:string" name="FlurFlurstuecknummern" minOccurs="0"/>
+      <xs:element type="xs:string" name="StrasseNichtGefunden"/>
+      <xs:element type="xs:string" name="Hausnummer" minOccurs="0"/>
+      <xs:element type="xs:string" name="Hausnummer_nv"/>
+      <xs:element type="xs:string" name="HausnummerNichtGefunden"/>
+      <xs:element type="xs:string" name="Adresszusatz" minOccurs="0"/>
+      <xs:element type="xs:string" name="Ort"/>
+      <xs:element type="xs:string" name="Laengengrad"/>
+      <xs:element type="xs:string" name="Breitengrad"/>
+      <xs:element type="xs:string" name="Registrierungsdatum"/>
+      <xs:element type="xs:string" name="Inbetriebnahmedatum"/>
+      <xs:element type="xs:string" name="DatumBeginnVoruebergehendeStilllegung" minOccurs="0"/>
+      <xs:element type="xs:string" name="DatumEndgueltigeStilllegung" minOccurs="0"/>
+      <xs:element type="xs:string" name="EinheitSystemstatus"/>
+      <xs:element type="xs:string" name="EinheitBetriebsstatus"/>
+      <xs:element type="xs:string" name="NichtVorhandenInMigriertenEinheiten"/>
+      <xs:element type="xs:string" name="DatumDesBetreiberwechsels" minOccurs="0"/>
+      <xs:element type="xs:string" name="DatumRegistrierungDesBetreiberwechsels" minOccurs="0"/>
+      <xs:element type="xs:string" name="NameGasspeicher"/>
+      <xs:element type="xs:string" name="Speicherart"/>
+      <xs:element type="xs:string" name="MaximalNutzbaresArbeitsgasvolumen"/>
+      <xs:element type="xs:string" name="MaximaleEinspeicherleistung"/>
+      <xs:element type="xs:string" name="MaximaleAusspeicherleistung"/>
+      <xs:element type="xs:string" name="DurchschnittlicherBrennwert"/>
+      <xs:element type="xs:string" name="Weic" minOccurs="0"/>
+      <xs:element type="xs:string" name="Weic_Na"/>
+      <xs:element type="xs:string" name="SpeicherMaStRNummer"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EinheitenGasSpeicherType">
+    <xs:sequence>
+      <xs:element type="EinheitGasSpeicherType" name="EinheitGasSpeicher" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

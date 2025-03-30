@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EinheitenAenderungNetzbetreiberzuordnungen" type="EinheitenAenderungNetzbetreiberzuordnungenType"/>
+  <xs:complexType name="EinheitenAenderungNetzbetreiberzuordnungType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="EinheitMastrNummer"/>
+      <xs:element type="xs:string" name="LokationMastrNummer"/>
+      <xs:element type="xs:string" name="NetzanschlusspunktMastrNummer" minOccurs="0"/>
+      <xs:element type="xs:string" name="NetzbetreiberMastrNummerAlt"/>
+      <xs:element type="xs:string" name="NetzbetreiberMastrNummerNeu" minOccurs="0"/>
+      <xs:element type="xs:string" name="ArtDerAenderung"/>
+      <xs:element type="xs:string" name="RegistrierungsdatumNetzbetreiberzuordnungsaenderung"/>
+      <xs:element type="xs:string" name="Netzbetreiberzuordnungsaenderungsdatum"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EinheitenAenderungNetzbetreiberzuordnungenType">
+    <xs:sequence>
+      <xs:element type="EinheitenAenderungNetzbetreiberzuordnungType" name="EinheitenAenderungNetzbetreiberzuordnung" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

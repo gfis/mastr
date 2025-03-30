@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Bilanzierungsgebiete" type="BilanzierungsgebieteType"/>
+  <xs:complexType name="BilanzierungsgebietType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Id"/>
+      <xs:element type="xs:string" name="Yeic" minOccurs="0"/>
+      <xs:element type="xs:string" name="BilanzierungsgebietNetzanschlusspunkt" minOccurs="0"/>
+      <xs:element type="xs:string" name="RegelzoneNetzanschlusspunkt"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BilanzierungsgebieteType">
+    <xs:sequence>
+      <xs:element type="BilanzierungsgebietType" name="Bilanzierungsgebiet" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

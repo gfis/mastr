@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ertuechtigungen" type="ErtuechtigungenType"/>
+  <xs:complexType name="ErtuechtigungType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Id"/>
+      <xs:element type="xs:string" name="DatumLetzteAktualisierung" minOccurs="0"/>
+      <xs:element type="xs:string" name="EegMastrNummer"/>
+      <xs:element type="xs:string" name="Ertuechtigungsart" minOccurs="0"/>
+      <xs:element type="xs:string" name="ErtuechtigungIstZulassungspflichtig" minOccurs="0"/>
+      <xs:element type="xs:string" name="Leistungserhoehung" minOccurs="0"/>
+      <xs:element type="xs:string" name="WiederinbetriebnahmeDatum" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ErtuechtigungenType">
+    <xs:sequence>
+      <xs:element type="ErtuechtigungType" name="Ertuechtigung" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

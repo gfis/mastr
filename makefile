@@ -1,6 +1,7 @@
 #!make
 
 # makefile for https://github.com/gfis/mastr - Marktstammdatenregister
+# 2025
 # 2025-03-30, Gfis
 #
 # Needs the following tools:
@@ -39,8 +40,9 @@ schema_01:
 	inst2xsd -simple-content-types string -enumerations never -outDir xsd -outPrefix $(FILE) xml/$(FILE).xml ; mv -v xsd/$(FILE)0.xsd xsd/$(FILE).xsd
 schema_1:
 	find xml -iname "*_1.xml" | perl -pe "s/xml\///; s/_1\.xml//; " | xargs -innn make schema_11 FILE=nnn
+SUF=1
 schema_11:
-	inst2xsd -simple-content-types string -enumerations never -outDir xsd -outPrefix $(FILE) xml/$(FILE)_1.xml ; mv -v xsd/$(FILE)0.xsd xsd/$(FILE).xsd
+	inst2xsd -simple-content-types string -enumerations never -outDir xsd -outPrefix $(FILE) xml/$(FILE)_$(SUF).xml ; mv -v xsd/$(FILE)0.xsd xsd/$(FILE).xsd
 #----
 validate: # validate all xml files against the generated schemata  
 	make valid0 2>&1 | tee validate.log
@@ -48,3 +50,29 @@ valid0:
 	find xsd -iname "*.xsd" | perl -pe "s/xsd\///; s/\.xsd//;" | xargs -innn make valid1 FILE=nnn
 valid1:
 	find xml -iname "$(FILE)*.xml" | xargs -innn xmllint --noout --schema xsd/$(FILE).xsd nnn 2>&1
+valid2:
+	make schema_11 FILE=$(FILE) SUF=$(SUF)
+	make valid1    FILE=$(FILE) 
+	git add -v xsd/$(FILE).xsd
+valid3:
+	make valid1    FILE=$(FILE) 
+	git add -v xsd/$(FILE).xsd
+  
+repair_schemata:
+	make valid2 FILE=AnlagenEegSpeicher   SUF=18
+	make valid2 FILE=AnlagenStromSpeicher SUF=14
+	inst2xsd -simple-content-types string -enumerations never \
+	xml/EinheitenStromSpeicher_1.xml \
+	xml/EinheitenStromSpeicher_10.xml \
+	xml/EinheitenStromSpeicher_19.xml \
+	xml/EinheitenStromSpeicher_2.xml
+	mv -v schema0.xsd \
+	xsd/EinheitenStromSpeicher.xsd
+	#--
+	inst2xsd -simple-content-types string -enumerations never \
+	xml/EinheitenSolar_1.xml \
+	xml/EinheitenSolar_21.xml 
+	mv -v schema0.xsd \
+	xsd/EinheitenSolar.xsd
+	#--
+	make valid2 FILE=Lokationen           SUF=21

@@ -66,6 +66,7 @@
       <xs:element type="xs:string" name="EegMaStRNummer"/>
       <xs:element type="xs:string" name="Buergerenergie"/>
       <xs:element type="xs:string" name="Kraftwerksnummer"/>
+      <xs:element type="xs:string" name="Weic"/>
     </xs:choice>
   </xs:complexType>
   <xs:complexType name="EinheitenSolarType">

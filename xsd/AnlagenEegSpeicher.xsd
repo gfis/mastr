@@ -5,10 +5,11 @@
     <xs:sequence>
       <xs:element type="xs:string" name="Registrierungsdatum"/>
       <xs:element type="xs:string" name="DatumLetzteAktualisierung"/>
-      <xs:element type="xs:string" name="EegInbetriebnahmedatum"/>
+      <xs:element type="xs:string" name="EegInbetriebnahmedatum" minOccurs="0"/>
       <xs:element type="xs:string" name="EegMaStRNummer"/>
       <xs:element type="xs:string" name="AnlagenschluesselEeg" minOccurs="0"/>
       <xs:element type="xs:string" name="AusschreibungZuschlag" minOccurs="0"/>
+      <xs:element type="xs:string" name="Zuschlagsnummer" minOccurs="0"/>
       <xs:element type="xs:string" name="VerknuepfteEinheitenMaStRNummern"/>
     </xs:sequence>
   </xs:complexType>

@@ -65,6 +65,8 @@
       <xs:element type="xs:string" name="Kraftwerksnummer"/>
       <xs:element type="xs:string" name="Einsatzverantwortlicher"/>
       <xs:element type="xs:string" name="Pumpspeichertechnologie"/>
+      <xs:element type="xs:string" name="ReserveartNachDemEnWG"/>
+      <xs:element type="xs:string" name="NettonennleistungDeutschland"/>
     </xs:choice>
   </xs:complexType>
   <xs:complexType name="EinheitenStromSpeicherType">

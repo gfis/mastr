@@ -1,0 +1,198 @@
+AnlagenEegSolar_29.xml:    <AnlagenschluesselEeg>E1084301ABLO033789000000000000001</AnlagenschluesselEeg>
+
+  <AnlageEegSolar>
+    <Registrierungsdatum>2023-04-21</Registrierungsdatum>
+    <DatumLetzteAktualisierung>2023-04-25T01:25:54.2734019</DatumLetzteAktualisierung>
+    <EegInbetriebnahmedatum>2023-04-04</EegInbetriebnahmedatum>
+    <EegMaStRNummer>EEG977252839958</EegMaStRNummer>
+    <AnlagenschluesselEeg>E1084301ABLO033789000000000000001</AnlagenschluesselEeg>
+    <AnlagenkennzifferAnlagenregister_nv>0</AnlagenkennzifferAnlagenregister_nv>
+    <InstallierteLeistung>6.480</InstallierteLeistung>
+    <RegistrierungsnummerPvMeldeportal_nv>0</RegistrierungsnummerPvMeldeportal_nv>
+    <AnlageBetriebsstatus>35</AnlageBetriebsstatus>
+    <VerknuepfteEinheitenMaStRNummern>SEE968583190054</VerknuepfteEinheitenMaStRNummern>
+  </AnlageEegSolar>
+
+EinheitenSolar_30.xml:    <EinheitMastrNummer>SEE968583190054</EinheitMastrNummer>
+ 
+  <EinheitSolar>
+    <EinheitMastrNummer>SEE968583190054</EinheitMastrNummer>
+    <DatumLetzteAktualisierung>2025-03-06T07:31:04.7933333</DatumLetzteAktualisierung>
+    <LokationMaStRNummer>SEL954827519019</LokationMaStRNummer>
+    <NetzbetreiberpruefungStatus>2954</NetzbetreiberpruefungStatus>
+    <AnlagenbetreiberMastrNummer>ABR989773596838</AnlagenbetreiberMastrNummer>
+    <Land>84</Land>
+    <Bundesland>1402</Bundesland>
+    <Landkreis>Emmendingen</Landkreis>
+    <Gemeinde>Kenzingen</Gemeinde>
+    <Gemeindeschluessel>08316020</Gemeindeschluessel>
+    <Postleitzahl>79341</Postleitzahl>
+    <Ort>Kenzingen</Ort>
+    <Registrierungsdatum>2023-04-21</Registrierungsdatum>
+    <Inbetriebnahmedatum>2023-04-04</Inbetriebnahmedatum>
+    <EinheitSystemstatus>472</EinheitSystemstatus>
+    <EinheitBetriebsstatus>35</EinheitBetriebsstatus>
+    <NichtVorhandenInMigriertenEinheiten>0</NichtVorhandenInMigriertenEinheiten>
+    <NameStromerzeugungseinheit>Solaranlage 79341RR19</NameStromerzeugungseinheit>
+    <Weic_nv>0</Weic_nv>
+    <Kraftwerksnummer_nv>0</Kraftwerksnummer_nv>
+    <Energietraeger>2495</Energietraeger>
+    <Bruttoleistung>6.480</Bruttoleistung>
+    <Nettonennleistung>4.600</Nettonennleistung>
+    <Einspeisungsart>689</Einspeisungsart>
+    <ZugeordneteWirkleistungWechselrichter>4.600</ZugeordneteWirkleistungWechselrichter>
+    <AnzahlModule>16</AnzahlModule>
+    <Lage>853</Lage>
+    <Leistungsbegrenzung>802</Leistungsbegrenzung>
+    <EinheitlicheAusrichtungUndNeigungswinkel>0</EinheitlicheAusrichtungUndNeigungswinkel>
+    <Hauptausrichtung>701</Hauptausrichtung>
+    <HauptausrichtungNeigungswinkel>808</HauptausrichtungNeigungswinkel>
+    <Nebenausrichtung>697</Nebenausrichtung>
+    <NebenausrichtungNeigungswinkel>808</NebenausrichtungNeigungswinkel>
+    <EegMaStRNummer>EEG977252839958</EegMaStRNummer>
+  </EinheitSolar>
+
+EinheitenStromSpeicher_7.xml:    <AnlagenbetreiberMastrNummer>ABR989773596838</AnlagenbetreiberMastrNummer>
+
+  <EinheitStromSpeicher>
+    <EinheitMastrNummer>SEE950103236113</EinheitMastrNummer>
+    <DatumLetzteAktualisierung>2023-04-19T11:44:58.8739459</DatumLetzteAktualisierung>
+    <NetzbetreiberpruefungStatus>2955</NetzbetreiberpruefungStatus>
+    <AnlagenbetreiberMastrNummer>ABR989773596838</AnlagenbetreiberMastrNummer>
+    <Land>84</Land>
+    <Bundesland>1402</Bundesland>
+    <Landkreis>Emmendingen</Landkreis>
+    <Gemeinde>Kenzingen</Gemeinde>
+    <Gemeindeschluessel>08316020</Gemeindeschluessel>
+    <Postleitzahl>79341</Postleitzahl>
+    <Ort>Kenzingen</Ort>
+    <Registrierungsdatum>2023-04-19</Registrierungsdatum>
+    <GeplantesInbetriebnahmedatum>2023-04-28</GeplantesInbetriebnahmedatum>
+    <EinheitSystemstatus>472</EinheitSystemstatus>
+    <EinheitBetriebsstatus>31</EinheitBetriebsstatus>
+    <NichtVorhandenInMigriertenEinheiten>0</NichtVorhandenInMigriertenEinheiten>
+    <NameStromerzeugungseinheit>Speicher</NameStromerzeugungseinheit>
+    <Weic_nv>0</Weic_nv>
+    <Kraftwerksnummer_nv>0</Kraftwerksnummer_nv>
+    <Energietraeger>2496</Energietraeger>
+    <Bruttoleistung>4.800</Bruttoleistung>
+    <Nettonennleistung>4.800</Nettonennleistung>
+    <FernsteuerbarkeitNb>0</FernsteuerbarkeitNb>
+    <Einspeisungsart>689</Einspeisungsart>
+    <AcDcKoppelung>694</AcDcKoppelung>
+    <Batterietechnologie>727</Batterietechnologie>
+    <Notstromaggregat>0</Notstromaggregat>
+    <ZugeordnenteWirkleistungWechselrichter>4.800</ZugeordnenteWirkleistungWechselrichter>
+    <SpeMastrNummer>SSE909246555124</SpeMastrNummer>
+    <EegAnlagentyp>8</EegAnlagentyp>
+    <Technologie>524</Technologie>
+  </EinheitStromSpeicher>
+
+EinheitenStromSpeicher_7.xml:    <AnlagenbetreiberMastrNummer>ABR989773596838</AnlagenbetreiberMastrNummer>
+
+  <EinheitStromSpeicher>
+    <EinheitMastrNummer>SEE934559648324</EinheitMastrNummer>
+    <DatumLetzteAktualisierung>2023-05-24T04:31:40.8848947</DatumLetzteAktualisierung>
+    <LokationMaStRNummer>SEL950716639134</LokationMaStRNummer>
+    <NetzbetreiberpruefungStatus>2954</NetzbetreiberpruefungStatus>
+    <AnlagenbetreiberMastrNummer>ABR989773596838</AnlagenbetreiberMastrNummer>
+    <Land>84</Land>
+    <Bundesland>1402</Bundesland>
+    <Landkreis>Emmendingen</Landkreis>
+    <Gemeinde>Kenzingen</Gemeinde>
+    <Gemeindeschluessel>08316020</Gemeindeschluessel>
+    <Postleitzahl>79341</Postleitzahl>
+    <Ort>Kenzingen</Ort>
+    <Registrierungsdatum>2023-04-21</Registrierungsdatum>
+    <Inbetriebnahmedatum>2023-04-04</Inbetriebnahmedatum>
+    <EinheitSystemstatus>472</EinheitSystemstatus>
+    <EinheitBetriebsstatus>35</EinheitBetriebsstatus>
+    <NichtVorhandenInMigriertenEinheiten>0</NichtVorhandenInMigriertenEinheiten>
+    <NameStromerzeugungseinheit>StromSpeicher 79341RR19</NameStromerzeugungseinheit>
+    <Weic_nv>0</Weic_nv>
+    <Kraftwerksnummer_nv>0</Kraftwerksnummer_nv>
+    <Energietraeger>2496</Energietraeger>
+    <Bruttoleistung>4.600</Bruttoleistung>
+    <Nettonennleistung>4.600</Nettonennleistung>
+    <Einspeisungsart>689</Einspeisungsart>
+    <Einsatzort>749</Einsatzort>
+    <AcDcKoppelung>694</AcDcKoppelung>
+    <Batterietechnologie>727</Batterietechnologie>
+    <Notstromaggregat>1</Notstromaggregat>
+    <ZugeordnenteWirkleistungWechselrichter>4.600</ZugeordnenteWirkleistungWechselrichter>
+    <SpeMastrNummer>SSE938382156827</SpeMastrNummer>
+    <EegMaStRNummer>EEG944222581186</EegMaStRNummer>
+    <EegAnlagentyp>8</EegAnlagentyp>
+    <Technologie>524</Technologie>
+  </EinheitStromSpeicher>
+
+AnlagenStromSpeicher_7.xml:    <MaStRNummer>SSE938382156827</MaStRNummer>
+
+  <AnlageStromSpeicher>
+    <MaStRNummer>SSE938382156827</MaStRNummer>
+    <Registrierungsdatum>2023-04-21</Registrierungsdatum>
+    <DatumLetzteAktualisierung>2023-05-24T04:31:40.8848947</DatumLetzteAktualisierung>
+    <NutzbareSpeicherkapazitaet>4.800</NutzbareSpeicherkapazitaet>
+    <VerknuepfteEinheitenMaStRNummern>SEE934559648324</VerknuepfteEinheitenMaStRNummern>
+    <AnlageBetriebsstatus>35</AnlageBetriebsstatus>
+  </AnlageStromSpeicher>
+ 
+Lokationen_31.xml:    <MastrNummer>SEL954827519019</MastrNummer>
+
+  <Lokation>
+    <DatumLetzteAktualisierung>2023-10-31T02:00:38.3771926</DatumLetzteAktualisierung>
+    <MastrNummer>SEL954827519019</MastrNummer>
+    <NameDerTechnischenLokation>500407739</NameDerTechnischenLokation>
+    <Lokationtyp>1</Lokationtyp>
+    <VerknuepfteEinheitenMaStRNummern>SEE968583190054</VerknuepfteEinheitenMaStRNummern>
+    <NetzanschlusspunkteMaStRNummern>SAN940561584895</NetzanschlusspunkteMaStRNummern>
+  </Lokation>
+
+  <Lokation>
+    <DatumLetzteAktualisierung>2023-05-26T13:24:02.6020914</DatumLetzteAktualisierung>
+    <MastrNummer>SEL950716639134</MastrNummer>
+    <NameDerTechnischenLokation>500407739</NameDerTechnischenLokation>
+    <Lokationtyp>1</Lokationtyp>
+    <VerknuepfteEinheitenMaStRNummern>SEE934559648324</VerknuepfteEinheitenMaStRNummern>
+    <NetzanschlusspunkteMaStRNummern>SAN906495457711</NetzanschlusspunkteMaStRNummern>
+  </Lokation>
+
+
+Netzanschlusspunkte_29.xml:    <NetzanschlusspunktMastrNummer>SAN940561584895</NetzanschlusspunktMastrNummer>
+
+  <Netzanschlusspunkt>
+    <NetzanschlusspunktMastrNummer>SAN940561584895</NetzanschlusspunktMastrNummer>
+    <LetzteAenderung>2023-10-31T02:00:38.3771926</LetzteAenderung>
+    <LokationMaStRNummer>SEL954827519019</LokationMaStRNummer>
+    <NameDerTechnischenLokation>500407739</NameDerTechnischenLokation>
+    <Lokationtyp>1</Lokationtyp>
+    <Spannungsebene>354</Spannungsebene>
+    <Nettoengpassleistung>6.480</Nettoengpassleistung>
+    <BilanzierungsgebietNetzanschlusspunktId>286</BilanzierungsgebietNetzanschlusspunktId>
+    <RegelzoneNetzanschlusspunkt>1001572</RegelzoneNetzanschlusspunkt>
+    <NetzMaStRNummer>SNE986645768553</NetzMaStRNummer>
+    <NochInPlanung>0</NochInPlanung>
+  </Netzanschlusspunkt>
+    
+
+grep SNE986645768553 Netze*
+   
+  <Netz>
+    <DatumLetzteAktualisierung>2022-09-12T15:06:17.3041468</DatumLetzteAktualisierung>
+    <MastrNummer>SNE986645768553</MastrNummer>
+    <Sparte>20</Sparte>
+    <KundenAngeschlossen>1</KundenAngeschlossen>
+    <GeschlossenesVerteilnetz>0</GeschlossenesVerteilnetz>
+    <Bezeichnung>Netze BW GmbH</Bezeichnung>
+    <Bundesland>334, 335</Bundesland>
+  </Netz>   
+  
+Marktakteure_26.xml:    <MastrNummer>ABR989773596838</MastrNummer>
+
+  <Marktakteur>
+    <MastrNummer>ABR989773596838</MastrNummer>
+    <DatumLetzeAktualisierung>2023-07-18T12:09:45.1211822</DatumLetzeAktualisierung>
+    <Personenart>518</Personenart>
+    <Marktfunktion>2</Marktfunktion>
+    <RegistrierungsdatumMarktakteur>2023-04-19T11:16:19.7095298</RegistrierungsdatumMarktakteur>
+  </Marktakteur>
